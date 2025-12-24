@@ -18,7 +18,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <img src="assets/logo.jpeg" alt="Idly Express Logo" class="logo-img">
+                    <img src="assets/Idly Express.png" alt="Idly Express Logo" class="logo-img">
                     <h1>Idly Express</h1>
                 </div>
                 <ul class="nav-menu" id="navMenu">
@@ -141,172 +141,131 @@
             <div class="menu-note">
                 <p><i class="bi bi-star-fill"></i> We proudly serve only idlies and traditional items — no sambar. This unique approach helps us maintain the authentic taste and identity that our customers love.</p>
             </div>
+            <div class="menu-cta-container">
+                <div class="menu-cta-content">
+                    <h3 class="menu-cta-title">Ready to Order?</h3>
+                    <p class="menu-cta-subtitle">Get your favorite idlies delivered fresh to your doorstep</p>
+                    <div class="menu-cta-buttons">
+                        <a href="tel:9942010288" class="menu-cta-btn menu-cta-btn-primary">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>Call to Order</span>
+                        </a>
+                        <a href="https://wa.me/919942010288" class="menu-cta-btn menu-cta-btn-whatsapp" target="_blank" rel="noopener" aria-label="Order via WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>WhatsApp Order</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <style>
-                .menu-cta-unique {
-                    display: flex;
-                    justify-content: center;
-                    align-items: stretch;
-                    gap: 2.5rem;
-                    margin: 2.5rem auto 0 auto;
-                    max-width: 650px;
-                    padding: 2.2rem 2rem 2.5rem 2rem;
-                    border-radius: 40px 12px 60px 18px/32px 50px 18px 60px;
-                    background: linear-gradient(120deg, #ffbf26 0%, #ff5697 40%, #25d366 100%);
-                    box-shadow: 0 8px 40px 0 rgba(41, 54, 112, 0.17), 0 2px 12px #fffbebee;
+                .menu-cta-container {
+                    margin: 3rem auto 0;
+                    max-width: 800px;
+                    padding: 0 20px;
+                }
+                .menu-cta-content {
+                    background: linear-gradient(135deg, var(--primary-green) 0%, #1b5e20 100%);
+                    border-radius: 20px;
+                    padding: 3rem 2.5rem;
+                    text-align: center;
+                    box-shadow: 0 10px 40px rgba(46, 125, 50, 0.3);
                     position: relative;
                     overflow: hidden;
-                    transition: transform 0.42s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.33s;
-                    flex-wrap: wrap;
                 }
-                .menu-cta-unique:hover, .menu-cta-unique:focus-within {
-                    transform: scale(1.048) rotate(-1.2deg);
-                    box-shadow: 0 16px 52px 0 rgba(139, 27, 147, 0.19), 0 6px 18px #abffc4;
-                    background: linear-gradient(120deg, #ff5697 0%, #ffbf26 40%, #25d366 100%);
-                }
-                .menu-cta-unique::before,
-                .menu-cta-unique::after {
-                    content: "";
+                .menu-cta-content::before {
+                    content: '';
                     position: absolute;
-                    border-radius: 40%;
-                    opacity: 0.17;
-                    pointer-events: none;
+                    top: -50%;
+                    right: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+                    animation: pulse 3s ease-in-out infinite;
                 }
-                .menu-cta-unique::before {
-                    top: -35px;
-                    left: -60px;
-                    width: 180px;
-                    height: 120px;
-                    background: radial-gradient(circle at 60% 40%, #ff4b71 60%, transparent 90%);
-                    animation: float1 7s infinite alternate;
+                @keyframes pulse {
+                    0%, 100% { transform: scale(1); opacity: 0.5; }
+                    50% { transform: scale(1.1); opacity: 0.8; }
                 }
-                .menu-cta-unique::after {
-                    bottom: -45px;
-                    right: -50px;
-                    width: 160px;
-                    height: 110px;
-                    background: radial-gradient(circle, #50e3c2 60%, transparent 85%);
-                    animation: float2 8s infinite alternate;
+                .menu-cta-title {
+                    color: var(--white);
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                    position: relative;
+                    z-index: 1;
                 }
-                @keyframes float1 {
-                    0% { transform: scale(1) translateY(0); }
-                    100% { transform: scale(1.07) translateY(24px); }
+                .menu-cta-subtitle {
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 1.1rem;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    z-index: 1;
                 }
-                @keyframes float2 {
-                    0% { transform: scale(1) translateY(0);}
-                    100% { transform: scale(1.12) translateY(-18px);}
+                .menu-cta-buttons {
+                    display: flex;
+                    gap: 1.5rem;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    position: relative;
+                    z-index: 1;
                 }
-                /* Broad & unique shape buttons */
-                .colorful-btn {
+                .menu-cta-btn {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    width: 260px;
+                    gap: 0.75rem;
+                    padding: 1.2rem 2.5rem;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    transition: all 0.3s ease;
                     min-width: 200px;
-                    max-width: 100%;
-                    height: 68px;
-                    font-size: 1.22rem;
-                    padding: 0 2.4rem;
-                    border-radius: 25px 65px 22px 45px / 60px 18px 55px 11px;
-                    font-weight: bold;
-                    border: none;
-                    letter-spacing: 0.02em;
-                    cursor: pointer;
-                    position: relative;
-                    box-shadow: 0 2px 12px rgba(34,36,75,0.10);
-                    transition: 
-                        color 0.31s cubic-bezier(.77,.23,.33,1.02),
-                        background 0.3s cubic-bezier(.68,.09,.44,1.3),
-                        transform 0.22s cubic-bezier(.68,.09,.44,1.3),
-                        box-shadow 0.37s cubic-bezier(.18,.89,.32,1.1);
-                    text-align: center;
-                    white-space: normal;
-                    line-height: 1.25;
-                    margin: 0;
-                    word-break: break-word;
+                    justify-content: center;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
                 }
-                .colorful-btn.order {
-                    background: linear-gradient(90deg, #ffef92 0%, #ffbf26 100%);
-                    color: #1c2349;
-                    border: 2.5px solid #f6f6ff20;
+                .menu-cta-btn i {
+                    font-size: 1.3rem;
                 }
-                .colorful-btn.order:hover, .colorful-btn.order:focus {
-                    background: linear-gradient(92deg, #ffeaa1 0%, #ff5697 99%);
-                    color: #7a117e;
-                    box-shadow: 0 4px 16px 0 #ffbf268a, 0 0.5px 8px #ff569744;
-                    animation: pulseOrder 0.6s;
-                    transform: translateY(-3px) scale(1.07) rotate(-2deg);
+                .menu-cta-btn-primary {
+                    background: var(--primary-orange);
+                    color: var(--white);
+                    border: 2px solid var(--primary-orange);
                 }
-                @keyframes pulseOrder {
-                    0% { box-shadow: 0 1px 8px #ffbf26; }
-                    60% { box-shadow: 0 0 0 8px #ffeaa114; }
-                    100% { box-shadow: 0 4px 16px 0 #ffbf268a; }
+                .menu-cta-btn-primary:hover {
+                    background: #ff7700;
+                    transform: translateY(-5px) scale(1.05);
+                    box-shadow: 0 8px 25px rgba(255, 136, 0, 0.4);
                 }
-                .colorful-btn.whatsapp {
-                    background: linear-gradient(94deg, #25d366 15%, #4a9fff 90%);
-                    color: #fffdf3;
-                    border: 2.5px solid #fff5f230;
-                    border-radius: 48px 14px 34px 33px/17px 60px 44px 17px;
+                .menu-cta-btn-whatsapp {
+                    background: #25d366;
+                    color: var(--white);
+                    border: 2px solid #25d366;
                 }
-                .colorful-btn.whatsapp:hover, .colorful-btn.whatsapp:focus {
-                    background: linear-gradient(102deg, #ff5697 2%, #4a9fff 88%);
-                    color: #ffe7fa;
-                    box-shadow: 0 4px 18px #4a9fff91, 0 1px 8px #25d36644;
-                    animation: pulseWA 0.56s;
-                    transform: translateY(-3px) scale(1.07) rotate(2deg);
+                .menu-cta-btn-whatsapp:hover {
+                    background: #20ba5a;
+                    transform: translateY(-5px) scale(1.05);
+                    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
                 }
-                @keyframes pulseWA {
-                    0% { box-shadow: 0 1px 8px #25d366; }
-                    60% { box-shadow: 0 0 0 10px #25d36622; }
-                    100% { box-shadow: 0 4px 18px #4a9fff91; }
-                }
-                /* icon add style */
-                .colorful-btn i {
-                    margin-right: 0.84em;
-                    transition: color 0.22s;
-                    font-size: 1.37em;
-                }
-                .colorful-btn.order:hover i {
-                    color: #ff4b71;
-                }
-                .colorful-btn.whatsapp:hover i {
-                    color: #fffbe6;
-                }
-                @media (max-width: 600px) {
-                    .menu-cta-unique {
-                        flex-direction: column;
-                        gap: 1.2rem;
-                        max-width: 97vw;
-                        padding: 1.6rem 0.8rem 1.9rem 0.8rem;
+                @media (max-width: 768px) {
+                    .menu-cta-content {
+                        padding: 2rem 1.5rem;
                     }
-                    .colorful-btn {
+                    .menu-cta-title {
+                        font-size: 1.5rem;
+                    }
+                    .menu-cta-subtitle {
+                        font-size: 1rem;
+                    }
+                    .menu-cta-btn {
                         width: 100%;
-                        min-width: 0;
-                        max-width: 100%;
-                        padding: 0 0.8rem;
-                        font-size: 1.14rem;
-                        height: 60px;
-                        border-radius: 24px 33px 22px 38px/30px 18px 35px 11px;
+                        min-width: auto;
+                        padding: 1rem 2rem;
                     }
-                    .colorful-btn.whatsapp {
-                        border-radius: 34px 14px 32px 22px/17px 34px 44px 17px;
+                    .menu-cta-buttons {
+                        flex-direction: column;
                     }
                 }
             </style>
-            <div class="menu-cta-unique">
-                <a href="tel:9942010288" class="colorful-btn order">
-                    <i class="bi bi-telephone-fill"></i>
-                    Call to Order
-                </a>
-                <a href="https://wa.me/919942010288"
-                   class="colorful-btn whatsapp"
-                   target="_blank"
-                   rel="noopener"
-                   aria-label="Order via WhatsApp"
-                >
-                    <i class="bi bi-whatsapp"></i>
-                    WhatsApp Order
-                </a>
-            </div>
     </section>
 
     <!-- Catering Section -->
@@ -377,7 +336,7 @@
                 <div class="branch-card">
                     <h3>Erode</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">BHAVANI, ERODE, Tamil Nadu</p>
+                    <p class="branch-address">BHAVANI, Tamil Nadu</p>
                     <a href="tel:9788142735" class="branch-phone"><i class="bi bi-telephone-fill"></i>9788142735</a>
                 </div>
                 <div class="branch-card">
@@ -389,31 +348,31 @@
                 <div class="branch-card">
                     <h3>Namakkal</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">THIRUCHENGODE,NAMAKKAL, Tamil Nadu</p>
+                    <p class="branch-address">THIRUCHENGODE,Tamil Nadu</p>
                     <a href="tel:9942212049" class="branch-phone"><i class="bi bi-telephone-fill"></i> 9942212049</a>
                 </div>
                 <div class="branch-card">
                     <h3>Namakkal</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">VEPPADAI,NAMAKKAL, Tamil Nadu</p>
+                    <p class="branch-address">VEPPADAI, Tamil Nadu</p>
                     <a href="tel:6381019138" class="branch-phone"><i class="bi bi-telephone-fill"></i> 6381019138</a>
                 </div>
                 <div class="branch-card">
                     <h3>Coimbatore</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">POLLACHI,COIMBATORE, Tamil Nadu</p>
+                    <p class="branch-address">POLLACHI, Tamil Nadu</p>
                     <a href="tel:8248282717" class="branch-phone"><i class="bi bi-telephone-fill"></i> 8248282717</a>
                 </div>
                 <div class="branch-card">
                     <h3>Tiruppur</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">PALLADAM,TIRUPUR, Tamil Nadu</p>
+                    <p class="branch-address">PALLADAM, Tamil Nadu</p>
                     <a href="tel:9600896155" class="branch-phone"><i class="bi bi-telephone-fill"></i> 9600896155</a>
                 </div>
                 <div class="branch-card">
                     <h3>Thirchy</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">PULITHALAI,THIRCHY, Tamil Nadu</p>
+                    <p class="branch-address">PULITHALAI, Tamil Nadu</p>
                     <a href="tel:7373654842" class="branch-phone"><i class="bi bi-telephone-fill"></i> 7373654842</a>
                 </div>
                 <div class="branch-card">
@@ -431,13 +390,13 @@
                 <div class="branch-card">
                     <h3>Coimbatore</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">KOVILPALAYAM,COIMBATORE, Tamil Nadu</p>
+                    <p class="branch-address">KOVILPALAYAM, Tamil Nadu</p>
                     <a href="tel:9942010288" class="branch-phone"><i class="bi bi-telephone-fill"></i> 9942010288</a>
                 </div>
                 <div class="branch-card">
                     <h3>Erode</h3>
                     <p class="branch-type">Branch</p>
-                    <p class="branch-address">BHAVANI,ERODE, Tamil Nadu</p>
+                    <p class="branch-address">BHAVANI, Tamil Nadu</p>
                     <a href="tel:9942010288" class="branch-phone"><i class="bi bi-telephone-fill"></i> 9942010288</a>
                 </div>
             </div>
@@ -504,12 +463,12 @@
                         <i class="bi bi-chat-dots-fill"></i>Chat on WhatsApp
                     </div>
                 </a>
-                <a href="mailto:praveenmanickam823@gmail.com" class="contact-card" style="min-width:220px; max-width: 270px; min-height:235px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration:none;">
+                <a href="mailto:idlyexpress.in@gmail.com" class="contact-card" style="min-width:220px; max-width: 270px; min-height:235px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration:none;">
                     <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
                     <h3 style="margin:0.5rem 0; text-align:center; width:100%;">Email</h3>
                     <p style="font-size:1rem; text-align:center; width:100%; margin-bottom:0.75rem;">Send us your queries</p>
                     <div style="color:var(--primary-green); font-weight:700; text-align:center; width:100%; word-break: break-all; overflow-wrap: anywhere; white-space: normal;">
-                        <i class="bi bi-envelope-fill"></i>praveenmanickam823@gmail.com
+                        <i class="bi bi-envelope-fill"></i>idlyexpress.in@gmail.com
                     </div>
                 </a>
                 <a href="https://instagram.com/idlyexpress_official" class="contact-card" style="min-width:220px; max-width: 270px; min-height:235px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration:none;" target="_blank" rel="noopener" aria-label="Instagram profile">
@@ -585,7 +544,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo.jpeg" alt="Idly Express Logo" class="footer-logo-img">
+                        <img src="assets/Idly Express.png" alt="Idly Express Logo" class="footer-logo-img">
                         <h3>Idly Express</h3>
                     </div>
                     <p>Authentic Taste of South India since 2011. Simple, authentic, and healthy dishes loved by all. Serving traditional idlies, sandhagai, and idiyappam across Tamil Nadu.</p>
@@ -618,7 +577,7 @@
                     <ul>
                         <li><i class="bi bi-telephone-fill"></i> <a href="tel:9942010288">9942010288</a></li>
                         <li><i class="bi bi-chat-dots-fill"></i> <a href="https://wa.me/919942010288" target="_blank">WhatsApp</a></li>
-                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:praveenmanickam823@gmail.com">Email</a></li>
+                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:idlyexpress.in@gmail.com">Email</a></li>
                         <li><i class="bi bi-geo-alt-fill"></i> Komarapalayam, Namakkal</li>
                     </ul>
                 </div>
