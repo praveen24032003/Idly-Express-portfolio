@@ -155,7 +155,6 @@ if ('IntersectionObserver' in window) {
 
 // ===== Back to Top Button (Optional Enhancement) =====
 // Uncomment to add a back-to-top button
-/*
 const backToTopButton = document.createElement('button');
 backToTopButton.innerHTML = '↑';
 backToTopButton.className = 'back-to-top';
@@ -192,7 +191,6 @@ backToTopButton.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
-*/
 
 // ===== Contact Form Handler =====
 const contactForm = document.getElementById('contactForm');
