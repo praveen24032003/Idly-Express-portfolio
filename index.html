@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Idly Express - Authentic Taste of South India. Traditional Idly, Sandhagai, and Idiyappam. Simple, authentic, and healthy dishes loved by all. Serving Tamil Nadu since 2011.">
-    <meta name="keywords" content="Idly Express, South Indian Restaurant, Idly, Sandhagai, Idiyappam, Tamil Nadu, Catering Services">
-    <title>Idly Express - Authentic Taste of South India</title>
+    <meta name="keywords" content="Idly Express, South Indian Restaurant, Idly, Sandhagai, Idiyappam, Tamil Nadu, Catering Services, Vegetarian, Vegan, Gluten-Free">
+    <meta name="author" content="Idly Express">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#2e7d32">
+    <meta name="msapplication-TileColor" content="#2e7d32">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://idlyexpress.in/">
+    <meta property="og:title" content="Idly Express - Authentic Taste of South India">
+    <meta property="og:description" content="Traditional Idly, Sandhagai, and Idiyappam. Simple, authentic, and healthy dishes loved by all. Serving Tamil Nadu since 2011.">
+    <meta property="og:image" content="https://idlyexpress.in/assets/Idly Express.png">
+    <meta property="og:site_name" content="Idly Express">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://idlyexpress.in/">
+    <meta name="twitter:title" content="Idly Express - Authentic Taste of South India">
+    <meta name="twitter:description" content="Traditional Idly, Sandhagai, and Idiyappam. Simple, authentic, and healthy dishes loved by all. Serving Tamil Nadu since 2011.">
+    <meta name="twitter:image" content="https://idlyexpress.in/assets/Idly Express.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://idlyexpress.in/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Idly Express.png">
+    
+    <title>Idly Express - Authentic Taste of South India | Traditional Idly, Sandhagai & Idiyappam</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,24 +48,24 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <img src="assets/Idly Express.png" alt="Idly Express Logo" class="logo-img">
-                    <h1>Idly Express</h1>
+                    <div class="logo-text">Idly Express</div>
                 </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#menu" class="nav-link">Menu</a></li>
-                    <li><a href="#catering" class="nav-link">Catering</a></li>
-                    <li><a href="#branches" class="nav-link">Branches</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
+                    <li role="none"><a href="#catering" class="nav-link" role="menuitem">Catering</a></li>
+                    <li role="none"><a href="#branches" class="nav-link" role="menuitem">Branches</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="tel:9942010288" class="btn-phone"><i class="bi bi-telephone-fill"></i> Call Now</a>
+                    <a href="tel:9942010288" class="btn-phone" aria-label="Call Idly Express at 9942010288"><i class="bi bi-telephone-fill"></i> Call Now</a>
                 </div>
-                <div class="hamburger" id="hamburger">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -48,6 +77,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">Authentic Taste of South India</h1>
                 <p class="hero-subtitle">Traditional Idly, Sandhagai & Idiyappam Since 2011</p>
+                <p class="hero-tagline">Steamed • Vegetarian • Vegan • Gluten-Free</p>
                 <div class="hero-stats">
                     <div class="stat-card">
                         <div class="stat-number">12+</div>
@@ -587,6 +617,58 @@
             </div>
         </div>
     </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Idly Express",
+      "image": "https://idlyexpress.in/assets/Idly Express.png",
+      "description": "Authentic Taste of South India. Traditional Idly, Sandhagai, and Idiyappam. Simple, authentic, and healthy dishes loved by all. Serving Tamil Nadu since 2011.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Komarapalayam",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919942010288",
+      "email": "idlyexpress.in@gmail.com",
+      "url": "https://idlyexpress.in",
+      "priceRange": "$$",
+      "servesCuisine": "South Indian",
+      "menu": "https://idlyexpress.in/#menu",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "22:00"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "K. Manickam"
+      },
+      "foundingDate": "2011-05-22",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "10000"
+      },
+      "sameAs": [
+        "https://instagram.com/idlyexpress_official"
+      ]
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
